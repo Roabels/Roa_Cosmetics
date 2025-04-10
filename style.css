@@ -1,0 +1,51 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f1f4;
+    color: #5c3a50;
+}
+
+/* Header */
+header {
+    background-color: #e8a1c3;
+    color: white;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+/* Product Styling */
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img:hover {
+    opacity: 0.8;
+}
+
+/* Product Detail */
+.product-detail-img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROA COSMETICS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: lightpink;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar and Header Styling */
+        header {
+            background: plum;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .navbar {
+            background-color: plum;
+            padding: 8px 0;
+        }
+        .navbar .nav-link {
+            color: white !important;
+            font-weight: bold;
+            padding: 8px 15px;
+        }
+        .navbar .nav-link:hover {
+            background-color: lightpink;
+            color: plum !important;
+        }
+
+        /* Container and Table Styling */
+        .container {
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+        table {
+            width: 100%;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid plum;
+        }
+        th {
+            background: pink;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background: #f1f1f1;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            background: palevioletred;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: rgb(197, 181, 197);
+        }
+
+        /* About Us Section */
+        .about-section {
+            background: white;
+            color: black;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: plum;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            background-color: #fff;
+            padding: 60px 20px;
+            color: plum;
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: plum;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 14px;
+                padding: 15px;
+            }
+            img {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="home">
+    <h1>ROA COSMETICS</h1>
+</header>
+
+<!-- About Us Section -->
+<div class="about-section" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to ROA Cosmetics, your go-to destination for premium beauty products. We are dedicated to providing top-quality, innovative, and cruelty-free cosmetics designed to empower you to express your unique style and beauty.</p>
+    <p>Our mission is to inspire confidence and creativity through our range of products, crafted with the highest standards of quality. Whether you're aiming for a natural glow or a bold statement, ROA Cosmetics is here to help you shine.</p>
+    <p>Our vision is to become a leading global brand in the beauty industry, known for our commitment to quality, sustainability, and inclusivity. We aim to be a trusted source for beauty products that not only enhance outer beauty but also promote self-love and individuality. By continuously innovating and evolving, we aspire to create a world where everyone can confidently express their personal beauty, feeling empowered and inspired at every step of their journey.</p>
+</div>
+
+<!-- Products Section -->
+<div class="container" id="products">
+    <h2 class="text-center mb-5">Featured Products</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><img src="lip.webp" alt="Lipstick"></td>
+              <td>O.two.o Matte Lipstick</td>
+              <td>Long-lasting, highly pigmented</td>
+              <td><a href="product.html?product=lipstick" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="foundation 1.jpg" alt="Foundation"></td>
+              <td>Sace Lady Liquid Foundation</td>
+              <td>Full coverage with natural finish</td>
+              <td><a href="product.html?product=foundation" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="eyeshadow 1.jpg" alt="Eyeshadow"></td>
+              <td>Squad Eyeshadow Palette</td>
+              <td>15 vibrant shades</td>
+              <td><a href="product.html?product=eyeshadow" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="mascara 1.jpg" alt="Mascara"></td>
+              <td>Maybelline Waterproof Mascara</td>
+              <td>Smudge-proof, volumizing</td>
+              <td><a href="product.html?product=mascara" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="powder 1.jpg" alt="Powder"></td>
+              <td>PinkFlash Loose Setting Powder</td>
+              <td>Matte finish, oil control</td>
+              <td><a href="product.html?product=powder" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="blush 1.jpg" alt="Blush On"></td>
+              <td>blk Soft Blur Powder Blush</td>
+              <td>Blurring pigments for a soft-blurred look</td>
+              <td><a href="product.html?product=blush" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="primer 1.jpg" alt="Primer"></td>
+              <td>Sace Lady All Matte Primer</td>
+              <td>Oil-control Minimizing Pore Smooth Fine Lines Make Up Base</td>
+              <td><a href="product.html?product=primer" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="liner 1.jpg" alt="Eyeliner"></td>
+              <td>Kimuse Eyeliner Pen</td>
+              <td>Double Head Eyeliner Pen for Cat Eye</td>
+              <td><a href="product.html?product=eyeliner" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="brow 1.jpg" alt="Eyebrow"></td>
+              <td>O.TWO.O Eyebrow Pencil</td>
+              <td>3 in 1 Fine Brow Definer Waterproof Natural</td>
+              <td><a href="product.html?product=eyebrow" class="btn">Add to Cart</a></td>
+            </tr>
+            <tr>
+              <td><img src="high 1.jpg" alt="Highlighter"></td>
+              <td>Shawill Highlighter</td>
+              <td>All-in-one Brightening Glitter Powder</td>
+              <td><a href="product.html?product=highlighter" class="btn">Add to Cart</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </table>
+</div>
+
+<!-- Contact Us Section -->
+<div class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! If you have any questions or inquiries, feel free to reach out to us using the form below:</p>
+
+    <form action="mailto:contact@roacosmetics.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <h4 class="mt-5">Or reach us at:</h4>
+    <p>Email: roacosmetics@gmail.com</p>
+    <p>Phone: 09317958138</p>
+    <p>Address: 123 ROA Cosmetics St., BGC, Philippines</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
